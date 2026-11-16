@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Rijksmuseum Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Rijks<span>museum</span> Guide</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Masterpieces</a>
+      <a href="visit.html">Plan Your Visit</a>
+      <a href="quiz.html" class="active">Quiz</a>
+    </nav>
+  </header>
+
+  <div class="page-banner">
+    <h1>Rijksmuseum Quiz</h1>
+    <p>How much do you know about the museum?</p>
+  </div>
+
+  <main>
+    <h2>Answer the Questions</h2>
+
+    <div class="question">
+      <p><strong>1. Who painted The Night Watch?</strong></p>
+      <label><input type="radio" name="q1" value="a"> Johannes Vermeer</label>
+      <label><input type="radio" name="q1" value="b"> Rembrandt van Rijn</label>
+      <label><input type="radio" name="q1" value="c"> Frans Hals</label>
+      <p class="feedback"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>2. In which city is the Rijksmuseum?</strong></p>
+      <label><input type="radio" name="q2" value="a"> Rotterdam</label>
+      <label><input type="radio" name="q2" value="b"> The Hague</label>
+      <label><input type="radio" name="q2" value="c"> Amsterdam</label>
+      <p class="feedback"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>3. Who painted The Milkmaid?</strong></p>
+      <label><input type="radio" name="q3" value="a"> Johannes Vermeer</label>
+      <label><input type="radio" name="q3" value="b"> Rembrandt van Rijn</label>
+      <label><input type="radio" name="q3" value="c"> Hendrick Avercamp</label>
+      <p class="feedback"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>4. In which year did the museum reopen after its big renovation?</strong></p>
+      <label><input type="radio" name="q4" value="a"> 2003</label>
+      <label><input type="radio" name="q4" value="b"> 2013</label>
+      <label><input type="radio" name="q4" value="c"> 2023</label>
+      <p class="feedback"></p>
+    </div>
+
+    <button id="quizButton">Check my answers</button>
+    <button id="resetButton" class="secondary">Try again</button>
+    <p class="result" id="quizResult"></p>
+  </main>
+
+  <footer>
+    <p>An unofficial student project for Web Programming by Jerrel Janssen. Not affiliated with the Rijksmuseum.</p>
+    <p>Official website: <a href="https://www.rijksmuseum.nl/en" target="_blank">rijksmuseum.nl</a></p>
+  </footer>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

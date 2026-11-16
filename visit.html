@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Visit | Rijksmuseum Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Rijks<span>museum</span> Guide</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Masterpieces</a>
+      <a href="visit.html" class="active">Plan Your Visit</a>
+      <a href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <div class="page-banner">
+    <h1>Plan Your Visit</h1>
+    <p>Everything you need to know before you go</p>
+  </div>
+
+  <main>
+    <h2>Opening Hours</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Hours</th>
+      </tr>
+      <tr><td>Monday to Sunday</td><td>09:00 - 17:00</td></tr>
+      <tr><td>Public holidays</td><td>09:00 - 17:00</td></tr>
+    </table>
+    <p>Hours and prices can change, so always check the
+    <a href="https://www.rijksmuseum.nl/en" target="_blank">official website</a> before you go.</p>
+
+    <div class="two-col">
+      <div>
+        <h2>Tips for Your Visit</h2>
+        <ol>
+          <li>Book a timed ticket online before you go.</li>
+          <li>Come early in the morning or late in the afternoon for fewer crowds.</li>
+          <li>Start with the Gallery of Honour and The Night Watch.</li>
+          <li>Rent an audio guide or use the free museum app.</li>
+          <li>Finish with a walk through the museum gardens.</li>
+        </ol>
+
+        <h2>Getting There</h2>
+        <ul>
+          <li>By tram or bus from the city centre.</li>
+          <li>On foot from the city centre, about 20 to 25 minutes.</li>
+          <li>By bike, which is the most Dutch way to travel.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Ticket Calculator</h2>
+        <div class="box">
+          <h3>How much will it cost?</h3>
+          <div class="calc-row">
+            <label for="adults">Adults (EUR 25.00)</label>
+            <input type="number" id="adults" min="0" value="1">
+          </div>
+          <div class="calc-row">
+            <label for="half">CJP / EYCA card (EUR 11.25)</label>
+            <input type="number" id="half" min="0" value="0">
+          </div>
+          <div class="calc-row">
+            <label for="audio">Audio guides (EUR 5.00)</label>
+            <input type="number" id="audio" min="0" value="0">
+          </div>
+          <button id="calcButton">Calculate total</button>
+          <p class="result" id="totalResult">EUR 0.00</p>
+          <p class="breakdown" id="breakdown">Press the button to see your total.</p>
+        </div>
+        <p class="breakdown">Young visitors can enter for free, so they are not in the calculator.</p>
+      </div>
+    </div>
+
+    <img class="visit-photo" src="images/gallery-of-honour.jpg" alt="The Gallery of Honour inside the Rijksmuseum">
+  </main>
+
+  <footer>
+    <p>An unofficial student project for Web Programming by Jerrel Janssen. Not affiliated with the Rijksmuseum.</p>
+    <p>Official website: <a href="https://www.rijksmuseum.nl/en" target="_blank">rijksmuseum.nl</a></p>
+  </footer>
+  <script src="js/ticket.js"></script>
+</body>
+</html>
